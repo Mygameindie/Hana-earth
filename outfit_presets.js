@@ -43,58 +43,72 @@ window.OUTFIT_PRESETS = [
   {
     name: "Casual",
     emoji: "👕",
-    clothes: { top: "top1", bottom: "pants1", shoes: "shoes1" },
-    colors:  { bottom: "Blue" },
-  },
-  {
-    name: "Skirt Day",
-    emoji: "🌸",
-    clothes: { top: "top1", bottom: "skirt1", shoes: "shoes1", hat: "hat1" },
-    colors:  { top: "Pink", bottom: "Purple" },
-    // Boy version: no skirt — same look with pants.
+    clothes: {
+      topUnderwear: "topunderwear1",
+      bottomUnderwear: "bottomunderwear1",
+      top: "top1",
+      bottom: "pants1",
+      jacket: "jacket1",
+      socks: "socks2",
+    },
+    colors: {},
+
     pet2: {
-      clothes: { top: "top1", bottom: "pants1", shoes: "shoes1", hat: "hat1" },
-      colors:  { top: "Pink", bottom: "Purple" },
+      clothes: {
+        bottomUnderwear: "boxers1_2",
+        top: "top1_2",
+        bottom: "pants1_2",
+        jacket: "jacket1_2",
+        socks: "socks1_2",
+        shoes: "shoes1_2",
+      },
+      colors: {},
     },
   },
-  {
-    name: "Party Dress",
-    emoji: "🎀",
-    clothes: { dress: "dress1", shoes: "shoes1", hat: "hat1" },
-    colors:  { dress: "Red", hat: "Yellow" },
-    // Boy version: no dress — a red top + pants instead.
-    pet2: {
-      clothes: { top: "top1", bottom: "pants1", shoes: "shoes1", hat: "hat1" },
-      colors:  { top: "Red", hat: "Yellow" },
-    },
-  },
+
+  
   {
     name: "Comfy",
     emoji: "🩲",
-    clothes: { topUnderwear: "topunderwear1", bottomUnderwear: "bottomunderwear1" },
+    clothes: {
+      topUnderwear: "topunderwear1",
+      bottomUnderwear: "bottomunderwear1",
+    },
+
     // Boy version: just boxers.
     pet2: {
-      clothes: { bottomUnderwear: "boxers1" },
+      clothes: {
+        bottomUnderwear: "boxers1_2",
+      },
     },
   },
+
   {
     name: "Swimsuit",
     emoji: "🩱",
-    clothes: { onepieceUnderwear: "onepieceunderwear1" },
-    colors:  { onepieceUnderwear: "Cyan" },
+    clothes: {
+      topUnderwear: "topunderwear1",
+      bottomUnderwear: "bottomunderwear1",
+    },
+    colors: {
+    },
+
     // Boy version: no one-piece — swim in boxers.
     pet2: {
-      clothes: { bottomUnderwear: "boxers1" },
-      colors:  { bottomUnderwear: "Cyan" },
+      clothes: {
+        bottomUnderwear: "boxers1_2",
+      },
+      colors: {
+      },
     },
   },
+
   {
     name: "Birthday Suit",
     emoji: "🚫",
     clothes: {}, // take everything off
   },
 ];
-
 
 // The apply logic + Outfits button UI live in the shared engine:
 // engine/outfit_presets_ui.js (loaded by index.html after this file).
